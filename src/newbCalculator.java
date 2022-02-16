@@ -5,18 +5,14 @@ public class newbCalculator {
 
         Scanner input = new Scanner(System.in);
 
-        int num2;
-        char op;
-        float result;
-
-
         System.out.print("Please enter the first number: ");
         int num1 = input.nextInt();
         System.out.print("please enter operator: ");
-        op = input.next().charAt(0);
+        char op = input.next().charAt(0);
         System.out.print("Please enter the second number: ");
-        num2 = input.nextInt();
+        int num2 = input.nextInt();
 
+        float result;
         switch (op) {
             case '+' -> {
                 result = num1 + num2;
