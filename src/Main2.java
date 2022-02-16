@@ -44,6 +44,42 @@ public class Main2 {
         //int num = scanner.nextInt()/2;
         //System.out.println("Your number is "+ num);
         //char s = '5';
+        Scanner input = new Scanner(System.in);
+        char day;
+
+
+        System.out.print("Please enter number of day : ");
+        day = input.next().charAt(0);
+
+
+        switch (day) {
+            case '1':
+                System.out.print("Sunday");
+                break;
+            case '2':
+                System.out.print("Monday");
+                break;
+            case '3':
+                System.out.print("Tuesday");
+                break;
+            case '4':
+                System.out.print("Wednesday");
+                break;
+            case '5':
+                System.out.print("Thursday");
+                break;
+            case '6':
+                System.out.print("Friday");
+                break;
+            case '7':
+                System.out.print("Saturday");
+                break;
+            default:
+                System.out.print("Invalid Input");
+
+
+        }
+
 
     }
 }

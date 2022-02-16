@@ -18,23 +18,47 @@ public class newbCalculator {
         num2 = input.nextInt();
 
 
-        if (op == '+') {
-            result = num1 + num2;
-            System.out.print((int) result);
-        } else if (op == '-') {
-            result = num1 - num2;
-            System.out.print((int) result);
-        } else if (op == '*') {
-            result = num1 * num2;
-            System.out.print((int) result);
-        } else if (op == '/') {
-            result = (float) num1 / (float) num2;
-            System.out.print(result);
-        } else if (op == '%') {
-            result = num1 % num2;
-            System.out.print((int) result);
-        } else {
-            System.out.print("Wrong Input");
+        //if (op == '+') {
+        //    result = num1 + num2;
+        //    System.out.print((int) result);
+        //} else if (op == '-') {
+        //    result = num1 - num2;
+        //    System.out.print((int) result);
+        //} else if (op == '*') {
+        //    result = num1 * num2;
+        //    System.out.print((int) result);
+        //} else if (op == '/') {
+        //    result = (float) num1 / (float) num2;
+        //    System.out.print(result);
+        //} else if (op == '%') {
+        //    result = num1 % num2;
+        //    System.out.print((int) result);
+        //} else {
+        //    System.out.print("Wrong Input");
+        //}
+
+        switch (op) {
+            case '+':
+                result = num1 + num2;
+                System.out.print((int) result);
+                break;
+            case  '-':
+                result = num1 - num2;
+                System.out.print((int) result);
+                break;
+            case '*':
+                result = num1 * num2;
+                System.out.print((int) result);
+                break;
+            case '/':
+                result = num1 / num2;
+                System.out.print(result);
+                break;
+            case '%':
+                result = num1 % num2;
+                System.out.print((int) result);
+            default:
+                System.out.print("Invalid Input");
         }
     }
 }
